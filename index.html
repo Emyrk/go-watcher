@@ -1,0 +1,132 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+<head>
+  <link rel="stylesheet" href="css/tenuki.css"></link>
+  <script src="js/tenuki.js"></script>
+
+  <link rel="stylesheet" href="css/example.css"></link>
+  <script src="js/example-controls.js"></script>
+</head>
+
+<div class="example-heading">
+  <p>This is an example showing the default board.</p>
+</div>
+
+<div>
+  <textarea id="sgf-input" rows="4" cols="50">
+    (;FF[4]
+    GM[1]
+    DT[2018-07-11]
+    PC[OGS: http://online-go.com/game/13581803]
+    PB[ikhzark]
+    PW[bitcoin]
+    BR[20k]
+    WR[18k]
+    TM[300]OT[5x30 byo-yomi]
+    CP[online-go.com]
+    RE[W+16.5]
+    SZ[9]
+    KM[3.5]
+    RU[japanese]
+    AB[ee]
+    ;W[cg]
+    ;B[cc]
+    ;W[ef]
+    ;B[df]
+    ;W[dg]
+    ;B[eg]
+    ;W[ff]
+    ;B[de]
+    ;W[gc]
+    ;B[fe]
+    ;W[ge]
+    ;B[fg]
+    ;W[gf]
+    ;B[gg]
+    ;W[hg]
+    ;B[hh]
+    ;W[gd]
+    ;B[hf]
+    ;W[fh]
+    ;B[eh]
+    ;W[he]
+    ;B[ig]
+    ;W[cf]
+    ;B[ce]
+    ;W[cd]
+    ;B[bd]
+    ;W[dd]
+    ;B[ed]
+    ;W[dc]
+    ;B[ec]
+    ;W[db]
+    ;B[be]
+    ;W[bc]
+    ;B[bb]
+    ;W[cb]
+    ;B[ac]
+    ;W[eb]
+    ;B[cc]
+    ;W[fc]
+    ;B[bc]
+    ;W[bf]
+    ;B[af]
+    ;W[ag]
+    ;B[ae]
+    ;W[bh]
+    ;B[dh]
+    ;W[ch]
+    ;B[ca]
+    ;W[da]
+    ;B[ba]
+    ;W[di]
+    ;B[ei]
+    ;W[ci]
+    ;B[ie]
+    ;W[id]
+    ;B[ic]
+    ;W[if]
+    ;B[fb]
+    ;W[hg]
+    ;B[gh]
+    ;W[ih]
+    ;B[ea]
+    ;W[gb]
+    ;B[ga]
+    ;W[ha]
+    ;B[fa]
+    ;W[hi]
+    ;B[hb]
+    ;W[da]
+    ;B[eb]
+    ;W[hc]
+    ;B[ia]
+    ;W[ib]
+    ;B[ha]
+    ;W[ic]
+    ;B[fi]
+    ;W[fd]
+    ;B[db]
+    ;W[ig]
+    ;B[]
+    ;W[]
+    )
+    </textarea>
+    <br />
+    <button onclick="play()">Show</button>
+</div>
+<br />
+
+<div class="tenuki-board"></div>
+
+<script src="js/sgfgrove.js"></script>
+<script src="js/play.js"></script>
+<script src="js/jquery.js"></script>
+
+
+
+<script>
+  boardElement = document.querySelector(".tenuki-board");
+</script>
