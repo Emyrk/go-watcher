@@ -1,5 +1,5 @@
 function play() {
-    var sgf = $("#sgf-input").text()
+    var sgf = $("#sgf-input").val()
     simulate_board(sgf)
 }
 
